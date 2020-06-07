@@ -1,0 +1,231 @@
+@mixin button {
+  background-color: blue;
+  color: white;
+  padding: 0.4em;
+  border: blue;
+} 
+
+.container{
+  width: 80%;
+  margin: 0em auto;
+}
+*{
+  box-sizing: border-box;
+}
+header{
+  background-color: #353a40;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+      .div1{
+        align-self: center;
+        width: 40%;
+      }
+  nav{
+    align-self: center;
+    ul{
+      list-style: none;
+      li{
+        display: inline-block;
+      }
+      a{
+        text-decoration: none;
+        color: #fff;
+       }
+    }
+   
+  }
+}
+.flex1{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  .box1{
+width: 55%;
+background-color: #cccccc;
+color: #969696;
+font-size: 4rem;
+text-align: center;
+padding: 1em;
+  }
+  .box2{
+width: 40%;  
+  button{
+    @include button()
+  }
+  }
+}
+.flex2{
+  background-color: #6c757e;
+  color: #fff;
+  margin-top: 1em;
+  padding: 1em 0em;
+  text-align: center;
+}
+.flex3{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  .box1{
+width: 30%;
+border: 1px solid #dedede;
+.button{
+  padding: 0.5em;
+  border: 1px solid #dedede;
+  background-color: #f7f7f7;
+  button{
+    @include button
+  }
+}
+  }
+  .box2{
+    width: 30%;
+    border: 1px solid #dedede;
+    .button{
+      padding: 0.5em;
+      border: 1px solid #dedede;
+      background-color: #f7f7f7;
+      button{
+        @include button
+      }
+    }
+  }
+  .box3{
+    width: 30%;
+    border: 1px solid #dedede;
+    .button{
+      padding: 0.5em;
+      border: 1px solid #dedede;
+      background-color: #f7f7f7;
+      button{
+        @include button
+      }
+    }
+   
+  }
+}
+
+footer{
+  background-color: #353a40;
+  color: #fff;
+  padding: 0.3em;
+  text-align: center;
+  p{
+    padding: 0em;
+    margin: 0em;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  @mixin button {
+    background-color: blue;
+    color: white;
+    padding: 0.4em;
+    border: blue;
+    margin-left: 11em;
+  } 
+  header{
+    background-color: #353a40;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+        .div1{
+          align-self: center;
+          width: 30%;
+          
+        }
+    nav{
+      width: 30%;
+      align-self: center;
+      ul{
+        list-style: none;
+        li{
+          display: inline-block;
+        }
+        a{
+          text-decoration: none;
+          color: #fff;
+         }
+      }
+     
+    }
+  }
+
+  .flex1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1em;
+    .box1{
+  width: 100%;
+  background-color: #cccccc;
+  color: #969696;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1em;
+    }
+    .box2{
+  width: 100%;
+  h1{
+    font-size: 1.5rem;
+  }  
+    button{
+      @include button()
+    }
+    }
+  }
+
+  .flex3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1em;
+    .box1{
+      h1{
+        font-size: 1.5rem;
+      }
+  width: 100%;
+  border: 1px solid #dedede;
+  .button{
+    padding: 0.5em;
+    border: 1px solid #dedede;
+    background-color: #f7f7f7;
+    button{
+      @include button
+    }
+  }
+    }
+    .box2{
+      h1{
+        font-size: 1.5rem;
+      }
+      width: 100%;
+      border: 1px solid #dedede;
+      .button{
+        padding: 0.5em;
+        border: 1px solid #dedede;
+        background-color: #f7f7f7;
+        button{
+          @include button
+        }
+      }
+    }
+    .box3{
+      h1{
+        font-size: 1.5rem;
+      }
+      width: 100%;
+      border: 1px solid #dedede;
+      .button{
+        padding: 0.5em;
+        border: 1px solid #dedede;
+        background-color: #f7f7f7;
+        button{
+          @include button
+        }
+      }
+     
+    }
+  }
+  
+}

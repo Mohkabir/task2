@@ -1,0 +1,299 @@
+.container {
+  width: 80%;
+  margin: 0em auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-color: #353a40;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .div1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 40%;
+}
+
+header nav {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.flex1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1em;
+}
+
+.flex1 .box1 {
+  width: 55%;
+  background-color: #cccccc;
+  color: #969696;
+  font-size: 4rem;
+  text-align: center;
+  padding: 1em;
+}
+
+.flex1 .box2 {
+  width: 40%;
+}
+
+.flex1 .box2 button {
+  background-color: blue;
+  color: white;
+  padding: 0.4em;
+  border: blue;
+}
+
+.flex2 {
+  background-color: #6c757e;
+  color: #fff;
+  margin-top: 1em;
+  padding: 1em 0em;
+  text-align: center;
+}
+
+.flex3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2em;
+}
+
+.flex3 .box1 {
+  width: 30%;
+  border: 1px solid #dedede;
+}
+
+.flex3 .box1 .button {
+  padding: 0.5em;
+  border: 1px solid #dedede;
+  background-color: #f7f7f7;
+}
+
+.flex3 .box1 .button button {
+  background-color: blue;
+  color: white;
+  padding: 0.4em;
+  border: blue;
+}
+
+.flex3 .box2 {
+  width: 30%;
+  border: 1px solid #dedede;
+}
+
+.flex3 .box2 .button {
+  padding: 0.5em;
+  border: 1px solid #dedede;
+  background-color: #f7f7f7;
+}
+
+.flex3 .box2 .button button {
+  background-color: blue;
+  color: white;
+  padding: 0.4em;
+  border: blue;
+}
+
+.flex3 .box3 {
+  width: 30%;
+  border: 1px solid #dedede;
+}
+
+.flex3 .box3 .button {
+  padding: 0.5em;
+  border: 1px solid #dedede;
+  background-color: #f7f7f7;
+}
+
+.flex3 .box3 .button button {
+  background-color: blue;
+  color: white;
+  padding: 0.4em;
+  border: blue;
+}
+
+footer {
+  background-color: #353a40;
+  color: #fff;
+  padding: 0.3em;
+  text-align: center;
+}
+
+footer p {
+  padding: 0em;
+  margin: 0em;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    background-color: #353a40;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  header .div1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 30%;
+  }
+  header nav {
+    width: 30%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  header nav ul {
+    list-style: none;
+  }
+  header nav ul li {
+    display: inline-block;
+  }
+  header nav ul a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .flex1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1em;
+  }
+  .flex1 .box1 {
+    width: 100%;
+    background-color: #cccccc;
+    color: #969696;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1em;
+  }
+  .flex1 .box2 {
+    width: 100%;
+  }
+  .flex1 .box2 h1 {
+    font-size: 1.5rem;
+  }
+  .flex1 .box2 button {
+    background-color: blue;
+    color: white;
+    padding: 0.4em;
+    border: blue;
+    margin-left: 11em;
+  }
+  .flex3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1em;
+  }
+  .flex3 .box1 {
+    width: 100%;
+    border: 1px solid #dedede;
+  }
+  .flex3 .box1 h1 {
+    font-size: 1.5rem;
+  }
+  .flex3 .box1 .button {
+    padding: 0.5em;
+    border: 1px solid #dedede;
+    background-color: #f7f7f7;
+  }
+  .flex3 .box1 .button button {
+    background-color: blue;
+    color: white;
+    padding: 0.4em;
+    border: blue;
+    margin-left: 11em;
+  }
+  .flex3 .box2 {
+    width: 100%;
+    border: 1px solid #dedede;
+  }
+  .flex3 .box2 h1 {
+    font-size: 1.5rem;
+  }
+  .flex3 .box2 .button {
+    padding: 0.5em;
+    border: 1px solid #dedede;
+    background-color: #f7f7f7;
+  }
+  .flex3 .box2 .button button {
+    background-color: blue;
+    color: white;
+    padding: 0.4em;
+    border: blue;
+    margin-left: 11em;
+  }
+  .flex3 .box3 {
+    width: 100%;
+    border: 1px solid #dedede;
+  }
+  .flex3 .box3 h1 {
+    font-size: 1.5rem;
+  }
+  .flex3 .box3 .button {
+    padding: 0.5em;
+    border: 1px solid #dedede;
+    background-color: #f7f7f7;
+  }
+  .flex3 .box3 .button button {
+    background-color: blue;
+    color: white;
+    padding: 0.4em;
+    border: blue;
+    margin-left: 11em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
